@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta charset="UTF-8">
+    <title>真题解析</title>
+    <meta name="description" content="考研魔鬼集训营，考研全年集训营，考研辅导全年魔鬼集训等中公魔鬼集训营考研培训班服务，半封闭军事化训练全年面授课程从基础到复试，师资力量雄厚，遍布全国分校，只等你来！">
+    <meta name="keywords" content="考研魔鬼集训营,考研全年集训营,考研辅导全年魔鬼集训">
+    <link rel="stylesheet" href="css/index.css?a" media="screen and (max-device-width:720px)">
+    <link rel="stylesheet" href="css/index_max.css?a" media="screen and (min-device-width:720px)">
+    <link rel="stylesheet" href="css/animate.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script  type="text/javascript" src="js/wow.min.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="">
+    <a href="http://wap.kaoyan365.cn/" title=""><h1>中公考研</h1></a>
+    <p>400-6300-966</p>
+</header>
+
+<!--banner-->
+<div class="banner">
+    <h1 class="wow flipInX">2018考研试题答案解析</h1>
+    <p class="wow bounceIn" data-wow-delay="0.8s">看直播、对答案、估分数</p>
+</div>
+
+<!--nav-->
+<nav id="box1">
+    <a href="#md1">政治</a>
+    <a href="#md2">英语</a>
+    <a href="#md3">数学</a>
+    <a href="#md4">联考综合</a>
+    <a href="#md5">专业课</a>
+    <a href="#md6">考后吐槽</a>
+</nav>
+
+<!--nav替身-->
+<div class="nav-replace" id="box2">
+   &nbsp; <!--我是nav替身，他在我消失，他消失，我出现 哈哈，加班敲代码-->
+</div>
+
+<script>
+        function getPos(obj){
+            var l=0;
+            var t=0;
+            while(obj){
+                l+=obj.offsetLeft;
+                t+=obj.offsetTop;
+                obj=obj.offsetParent;
+            }
+            return {left:l,top:t};
+        }
+        window.onload=function(){
+            var oBox1=document.getElementById('box1');
+            var oBox2=document.getElementById('box2');
+            //oBox的绝对高度
+            var oT=getPos(oBox1).top;
+            //滚动时获取滚动距离
+            window.onscroll=function(){
+                var scrollT=document.documentElement.scrollTop||document.body.scrollTop;
+                //当滚动距离大于等于oBox的绝对高度时
+                if(scrollT>=oT){
+                    //判断是不是ie6
+                    if(window.navigator.userAgent.indexOf('MSIE 6.0')!=-1){
+                        oBox1.style.position='absolute';
+                        oBox1.style.left='0';
+                        oBox1.style.top=scrollT+'px';
+                        oBox2.style.display='block';
+                    }else{//不是ie6
+                        oBox1.style.position='fixed';
+                        oBox1.style.left='0';
+                        oBox1.style.top='0';
+                        oBox2.style.display='block';
+                    }
+
+                }else{
+                    oBox1.style.position='';
+                    oBox2.style.display='none';
+                }
+            }
+        }
+    </script>
+<!--直播&估分-->
+<div class="zg-zbgf">
+    <p class="zg-zbgf-tit">
+        <b>直播预告</b>
+    </p>
+    <a href="" class="appo">
+        预约入口
+    </a>
+    <table class="zbgf-tab">
+        <tr class="zbgf-tab-tit bg">
+            <td>日期</td>
+            <td>时间</td>
+            <td>科目</td>
+            <td>中公名师</td>
+        </tr>
+        <tr>
+            <td rowspan="5" class="bg">12月23日</td>
+            <td>19:00-19:40</td>
+            <td>政治</td>
+            <td>杨攀</td>
+        </tr>
+        <tr class="bg">
+            <td>19:45-20:15</td>
+            <td>英语一</td>
+            <td>杨凤芝</td>
+        </tr>
+        <tr>
+            <td>19:00-19:40</td>
+            <td>管综-初数</td>
+            <td>王升千</td>
+        </tr>
+        <tr class="bg">
+            <td>19:45-20:25</td>
+            <td>管综-逻辑与写作</td>
+            <td>马玉涛</td>
+        </tr>
+        <tr>
+            <td>20:30-21:00</td>
+            <td>英语二</td>
+            <td>杨凤芝</td>
+        </tr>
+        <tr class="bg">
+            <td rowspan="3">12月24日</td>
+            <td>19:00-20:00</td>
+            <td>数学</td>
+            <td>李擂</td>
+        </tr>
+        <tr>
+            <td>20:05-21:05</td>
+            <td>英语一</td>
+            <td>杨凤芝</td>
+        </tr>
+        <tr class="bg">
+            <td>21:10-21:50</td>
+            <td>政治</td>
+            <td>杨攀</td>
+        </tr>
+    </table>
+    <p class="zg-zbgf-tit">
+        <b style="background-image: url(images/m2.png);">估分入口</b>
+    </p>
+    <ul class="entrance">
+        <li>
+            <a href="">2018考研政治估分入口</a>
+        </li>
+        <li>
+            <a href="">2018考研数学估分入口</a>
+        </li>
+        <li>
+            <a href="">2018考研数学估分入口</a>
+        </li>
+        <li>
+            <a href="">2018考研管综估分入口</a>
+        </li>
+    </ul>
+    <a href="" class="qq">2018考研对答案群</a>
+</div>
+
+<!--政治答案-估分-->
+<div class="main" id="md1">
+    <h2 class="main-tit">考研政治试题 · 答案 · 估分</h2>
+    <div class="module-one">
+        <b class="db">试题答案</b>
+        <a href="">2018考研政治试题及答案（完整版）</a>
+        <p>
+            <a href="">2018考研政治试题</a>
+            <a href="">2018考研政治答案</a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">试题答案</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">预测结果</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <p class="zg-jrgf">
+        <a href="">点击进入</a>
+    </p>
+</div>
+
+<!--英语答案-估分-->
+<div class="main" id="md2" style="background: #fbfbfb;">
+    <h2 class="main-tit">考研英语试题 · 答案 · 估分</h2>
+    <div class="module-one">
+        <b class="db2">英语一试题答案</b>
+        <a href="">2018英语政治试题及答案（完整版）</a>
+        <p>
+            <a href="">2018英语政治试题</a>
+            <a href="">2018英语政治答案</a>
+        </p>
+    </div>
+    <div class="module-one">
+        <b class="db2">英语二试题答案</b>
+        <a href="">2018考研英语试题及答案（完整版）</a>
+        <p>
+            <a href="">2018考研英语试题</a>
+            <a href="">2018考研英语答案</a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">解析</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">预测结果</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <p class="zg-jrgf zg-jrgf2">
+        <a href="">点击进入</a>
+        <a href="">点击进入</a>
+    </p>
+</div>
+
+<!--数学答案-估分-->
+<div class="main" id="md3">
+    <h2 class="main-tit">考研数学试题 · 答案 · 估分</h2>
+    <div class="module-one">
+        <b class="db2">数学一试题答案</b>
+        <a href="">2018英语政治试题及答案（完整版）</a>
+        <p>
+            <a href="">2018英语政治试题</a>
+            <a href="">2018英语政治答案</a>
+        </p>
+    </div>
+    <div class="module-one">
+        <b class="db2">数学二试题答案</b>
+        <a href="">2018考研英语试题及答案（完整版）</a>
+        <p>
+            <a href="">2018考研英语试题</a>
+            <a href="">2018考研英语答案</a>
+        </p>
+    </div>
+    <div class="module-one">
+        <b class="db2">数学三试题答案</b>
+        <a href="">2018考研英语试题及答案（完整版）</a>
+        <p>
+            <a href="">2018考研英语试题</a>
+            <a href="">2018考研英语答案</a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">解析</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">预测结果</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <p class="zg-jrgf zg-jrgf3">
+        <a href="">点击进入</a>
+        <a href="">点击进入</a>
+        <a href="">点击进入</a>
+    </p>
+</div>
+
+<!--管综答案-估分-->
+<div class="main" id="md4" style="background: #fbfbfb;">
+    <h2 class="main-tit">考研管综试题 · 答案 · 估分</h2>
+    <div class="module-one">
+        <b class="db">试题答案</b>
+        <a href="">2018考研政治试题及答案（完整版）</a>
+        <p>
+            <a href="">2018考研政治试题</a>
+            <a href="">2018考研政治答案</a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">试题答案</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <div class="module-two">
+        <b class="db">预测结果</b>
+        <p>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+            <a href="">2018年考研政治难度总体变化分析分析 </a>
+        </p>
+    </div>
+    <p class="zg-jrgf zg-jrgf4">
+        <a href="">点击进入</a>
+    </p>
+</div>
+
+<!--考研专业课试题 · 答案-->
+<div class="main2" id="md5">
+    <h2 class="main-tit">考研专业课试题 · 答案</h2>
+    <ul>
+        <li>
+            <b>心理学</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>教育学</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>历史学</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>计算机</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>西医综合</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>中医综合</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>法硕</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>农学</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+        <li>
+            <b>其他</b>
+            <a href="">试题及答案</a>
+            <a href="">试题</a>
+            <span>|</span>
+            <a href="">答案</a>
+        </li>
+    </ul>
+</div>
+
+<!--吐槽-->
+<div class="main3" id="md6">
+    <h2 class="main-tit">考后来吐槽</h2>
+    <div class="message-wrap">
+        <p class="msg-intro">
+            终于结束了，这一年的努力在这一刻画上句号了！<br>
+            无论考得好与坏，考完这一次对自己说声谢谢！<br>
+            在考试这两天，你碰到了什么奇葩事情，现在尽情来吐槽吧！
+        </p>
+        <form action="">
+            <textarea maxlength="50" placeholder="我想说..."></textarea>
+            <input type="button" value="发布">
+        </form>
+        <div class="msg-show-wrap">
+            <ul>
+                <li>
+                    <p class="user-msg">
+                        <img src="images/m15.png" alt="">
+                        <span>中公考研北京网友</span>
+                    </p>
+                    <p class="msg-show">
+                        答案什么时候出？答案什么时候出？答案什么时候出？答案什么时候出？
+                    </p>
+                    <div class="praise act">
+                        <e>&nbsp;</e>
+                        <span>1</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="user-msg">
+                        <img src="images/m15.png" alt="">
+                        <span>中公考研北京网友2</span>
+                    </p>
+                    <p class="msg-show">
+                        出了也白出，出了也白出，出了也白出，出了也白出
+                    </p>
+                    <div class="praise">
+                        <e>&nbsp;</e>
+                        <span>66</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="user-msg">
+                        <img src="images/m15.png" alt="">
+                        <span>中公考研北京网友3</span>
+                    </p>
+                    <p class="msg-show">
+                        白出谁不出，白出谁不出，白出谁不出，白出谁不出，白出谁不出
+                    </p>
+                    <div class="praise">
+                        <e>&nbsp;</e>
+                        <span>666</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="user-msg">
+                        <img src="images/m15.png" alt="">
+                        <span>中公考研北京网友4</span>
+                    </p>
+                    <p class="msg-show">
+                        出就赶紧出，出就赶紧出，出就赶紧出，出就赶紧出，出就赶紧出，出就赶紧出，出就赶紧出
+                    </p>
+                    <div class="praise">
+                        <e>&nbsp;</e>
+                        <span>6666</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="lam-rule">
+        <h3>吐槽有礼~</h3>
+        <b>活动规则</b>
+        <p>
+            在左侧参与吐槽，噼里啪啦说一通，就可以免费领取<br>
+            中公考研为您准备的考后大礼包，任选其一。
+        </p>
+        <ul>
+            <li>1、中公考研名师1v1复试调剂指导与答疑。 </li>
+            <li>2、价值599元的2018考研复试网课。</li>
+            <li>3、价值599元的2018考研复试网课。</li>
+            <li>4、二战课程优惠券。</li>
+        </ul>
+        <b>领取方式</b>
+        <p>关注中公微信公众号，回复“吐槽有礼”免费领取。</p>
+        <img src="images/m19.png" alt="">
+    </div>
+</div>
+
+<!--分数线预测-->
+<div class="main4">
+    <h2 class="main-tit">2018考研分数线预测</h2>
+    <p>从历年分数线变化 看今年考研分数线</p>
+    <h3>
+        <p>国家线预测</p>
+    </h3>
+    <div class="m4-btn">
+        <p class="on3">学硕国家线</p>
+        <p>专硕国家线</p>
+    </div>
+    <div class="m4-show" style="display: block;">
+        <b>学硕国家线</b>
+        <div class="btn2-box btn2-box1">
+            <ul>
+                <li class="on4">哲学</li>
+                <li>经济学</li>
+                <li>法学</li>
+                <li>管理学</li>
+                <li>文学</li>
+                <li>教育学</li>
+                <li>历史学</li>
+                <li>理学</li>
+                <li>工学</li>
+                <li>农学</li>
+                <li>医学</li>
+                <li>军事学</li>
+            </ul>
+            <p>更多</p>
+        </div>
+        <p class="btn-show btn-show1" style="display: block;">
+            <a href="" target="_blank">
+                <img src="images/img1.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g01.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g3.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g12.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g5.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g4.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g6.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g7.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g8.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g9.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g10.png" alt="">
+            </a>
+        </p>
+        <p class="btn-show btn-show1">
+            <a href="" target="_blank">
+                <img src="images/g11.png" alt="">
+            </a>
+        </p>
+    </div>
+    <div class="m4-show">
+        <b>专硕国家线</b>
+        <div class="btn2-box btn2-box2">
+            <ul>
+                <li class="on4">
+                    <span>
+                        经济学<br>门类专硕
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        审计硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        法学门类<br>专硕
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        教育、汉语<br>国际教育硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        应用心理硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        体育硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        翻译、新闻<br>传播、出版硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        文物与博<br>物馆硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        建筑学、工程、<br>城市规划硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        农学门类<br>硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        医学门类<br>硕士
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        临床医学中西<br>照顾类专业
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        管理类专硕
+                    </span>
+                </li>
+                <li>
+                    <span>艺术专硕</span>
+                </li>
+            </ul>
+            <p>更多</p>
+        </div>
+
+        <a href="" target="_blank" class="btn-show btn-show2" style="display: block;">
+            <img src="images/g01.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g02.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g03.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g04.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g05.png    " alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g06.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g07.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g08.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g09.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g010.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g011.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g012.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g013.png" alt="">
+        </a>
+        <a href="" target="_blank" class="btn-show btn-show2">
+            <img src="images/g014.png" alt="">
+        </a>
+    </div>
+    <h3>
+        <p>34所分数线预测</p>
+    </h3>
+    <table class="m4-tab">
+        <tr>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td class="bg">
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td class="bg">
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td class="bg">
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td class="bg">
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td class="bg">
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+            <td>
+                <p>北京大学</p>
+                <div>
+                    <a href="">2017</a>
+                    <a href="">15</a>
+                    <a href="">14</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="fix">
+    <a class="fix1" href="tel:400-6300-966" title="">400-6300-966</a>
+    <a class="fix2" href="" title="在线咨询">在线咨询</a>
+</div>
+</body>
+<script>
+    new WOW().init()
+</script>
+</html>
