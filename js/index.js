@@ -19,9 +19,7 @@ $(function(){
 			})(window,document);
 		}
 	})
-    $('#box1 a').click(function(){
-        $('#box1 a').css('color','#fff').eq($(this).index()).css('color','#ffe400')
-    })
+    
     $('.m4-btn p').click(function () {
         $('.m4-btn p').removeClass('on3').eq($(this).index()).addClass('on3');
         $('.m4-show').hide().eq($(this).index()).show()
@@ -55,5 +53,13 @@ $(function(){
     $('.open').click(function(){
         $(this).hide()
         $('.foot').show()
+    })
+    var oH=$('nav').outerHeight(true)
+    $('nav a').each(function(index){
+        $(this).click(function(){
+            var h=$('.md').eq(index).position().top-oH;
+            $('nav a').css('color','#fff').eq(index).css('color','#ffe400');
+            $('body,html').animate({'scrollTop':h},300)
+        })
     })
 })

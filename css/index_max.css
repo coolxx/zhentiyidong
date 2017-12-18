@@ -699,7 +699,8 @@ nav a{
     background: url('../images/foot.jpg') no-repeat center;
     position: fixed;
     bottom: 0;
-    z-index: 999
+    z-index: 999;
+    display: none;
 }
 .foot em{
     float: right;
@@ -755,7 +756,6 @@ nav a{
     position: fixed;
     bottom: 0;
     height: 68px;
-    display: none;
 }
 .open img{
     display: block;

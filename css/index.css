@@ -721,7 +721,8 @@ nav a{
     background-size: 18.0rem;
     position: fixed;
     bottom: 0;
-    z-index: 999
+    z-index: 999;
+    display: none;
 }
 .foot em{
     float: right;
@@ -777,7 +778,6 @@ nav a{
     position: fixed;
     bottom: 0;
     height: 1.7rem;
-    display: none;
 }
 .open img{
     display: block;
