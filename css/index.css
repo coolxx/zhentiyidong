@@ -69,6 +69,7 @@ nav{
     background: #ff571d;
     border-bottom: 0.15rem solid #e83e03;
     overflow: hidden;
+    z-index: 9;
 }
 nav a{
     float: left;
@@ -713,30 +714,73 @@ nav a{
 .m4-tab td.bg{
     background: #fff9f7;
 }
-.fix{
+.foot{
     width: 18.0rem;
-    display: flex;
+    height:6.0rem;
+    background: url('../images/foot.jpg') no-repeat center;
+    background-size: 18.0rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 999
+}
+.foot em{
+    float: right;
+    width: 1.5rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+.foot form{
+    overflow: hidden;
+    margin-top: 1.5rem;
+    margin-left: 0.35rem;
+}
+.foot form div{
+    float: left;
+    margin-left: 1.0rem;
+    margin-top: 0.65rem;
+    width: 8.3rem;
+    height: 1.325rem;
+    background: #fff;
+    border-radius: 0.65rem;
+    line-height: 1.3rem;
+    font-size: 0
+}
+.foot form div span{
+    float: left;
+    height: 1.325rem;
+    font-size: 0.6rem;
+    color: #bababa;
+    margin-left: 0.6rem;
+}
+.foot form div input{
+    width: 4.5rem;
+    float: left;
+    height: 1.325rem;
+    border: none;
+    font-size: 0.6rem;
+}
+.foot form > input{
+    float: right;
+    width: 5.85rem;
+    height: 1.6rem;
+    margin-right: 1.55rem;
+    margin-top: 1.25rem;
+    background: #fffc00;
+    border-radius: 0.8rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6rem;
+    border: none;
+}
+.open{
     position: fixed;
     bottom: 0;
     height: 1.7rem;
-    z-index: 9999
-
+    display: none;
 }
-.fix a{
+.open img{
     display: block;
-    flex:1;
-    height: 100%;
-    text-align: center;
-    line-height: 1.7rem;
-    font-size: 0.6rem;
-    color: #fff;
-    padding-left: 0.5rem;
-}
-.fix1{
-    background: url(../images/fix1.png) no-repeat 15% center #000;
-    background-size: 1.15rem 1.125rem
-}
-.fix2{
-    background: url(../images/fix2.png) no-repeat 25% center #e62929;
-    background-size: 1.525rem 1.2rem
+    width: 18.0rem;
+    z-index: 999;
 }

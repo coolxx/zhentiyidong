@@ -48,4 +48,12 @@ $(function(){
             $('.btn-show2').hide().eq(index).show()
         })
     })
+    $('.foot em').click(function(){
+        $('.foot').hide()
+        $('.open').show()
+    })
+    $('.open').click(function(){
+        $(this).hide()
+        $('.foot').show()
+    })
 })
